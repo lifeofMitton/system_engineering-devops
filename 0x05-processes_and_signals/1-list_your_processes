@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Display all processes with hierarchy and detailed info
+
+ps axjf
