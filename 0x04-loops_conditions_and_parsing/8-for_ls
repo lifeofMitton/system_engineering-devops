@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# List non-hidden files in the current directory and display part after first dash using a for loop
+
+for file in *; do
+  # Only process files that contain a dash
+  if [[ "$file" == *-* ]]; then
+    echo "${file#*-}"
+  else
+    echo "$file"
+  fi
+done
