@@ -1,2 +1,18 @@
+
+# Paste these two lines into nano:
 #!/bin/bash
-echo "Best School" > "\\\\*\\\\'\\\"Best School\\\"\\\\'\\\\*\\\\$\\\\?\\\\*\\\\*\\\\*\\\\*\\\\*\\\\:\\)"
+echo "Best School" > '*\'"Best School"\'*$\?*****:)'
+
+# Then save and exit nano (Ctrl+O, Enter, Ctrl+X)
+
+chmod +x 7-file                            # make it executable
+./7-file                                   # run the script
+
+# Confirm the file is created:
+ls -l | grep "Best School"
+
+# Check the content inside the weirdly named file (copy exactly):
+cat '*\'"Best School"\'*$\?*****:)'
+#!/bin/bash
+echo "Best School" > '*\'"Best School"\'*$\?*****:)'
+
