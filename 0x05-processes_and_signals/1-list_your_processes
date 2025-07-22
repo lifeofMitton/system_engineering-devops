@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
-# Display all processes with hierarchy and detailed info
+# Display all processes with parent PID, time, command, and hierarchy
 
-ps axjf
+ps -eo ppid,time,cmd --forest
+
