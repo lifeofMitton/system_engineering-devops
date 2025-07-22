@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Script that prints the PID of the current script process
+
+echo "$$"
+
