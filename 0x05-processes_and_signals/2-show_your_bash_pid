@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-# This script displays running processes that contain the word "bash"
+ps -ef | grep bash | grep -v grep
 
-ps -aux | grep bash
 
